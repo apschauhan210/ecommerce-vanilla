@@ -2,7 +2,7 @@ let grid = document.querySelector(".products");
 let filterInput = document.getElementById("filterInput");
 
 const queryString = decodeURI(window.location.search.slice(1));
-const queries = queryString.split('?');
+const queries = queryString.split('&');
 const queryPair = {};
 queries.forEach(query => {
     const keyValuePair = query.split('=');
